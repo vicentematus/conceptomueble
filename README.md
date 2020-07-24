@@ -1,5 +1,6 @@
-# Tailwind CSS HTML boilerplate
+# Conceptomueble Pagina Web
 
+Usando el boilerplate de @estevanmaito
 Basic Tailwind CSS project, extended with:
 
 - Tailwind UI color palette

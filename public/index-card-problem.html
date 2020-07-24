@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/tailwind.output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
+    <header class="absolute w-full py-4">
+      <div class="">
+        <div class="">
+          <a href="#">
+            <svg
+              viewBox="0 0 206 40"
+              class="w-64 text mx-auto"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55.293 30.915c-1.062 1.205-2.61 1.836-4.248 1.836-3.043 0-5.508-2.34-5.508-5.473 0-3.078 2.43-5.472 5.508-5.472 1.584 0 3.06.576 4.122 1.746l-1.746 1.782c-.522-.703-1.26-1.207-2.34-1.207-1.584 0-2.934 1.422-2.934 3.15 0 1.729 1.331 3.15 2.934 3.15a2.88 2.88 0 002.412-1.314l1.8 1.802zM67.082 27.278c0 3.096-2.466 5.473-5.562 5.473-3.079 0-5.544-2.394-5.544-5.473 0-3.041 2.52-5.472 5.544-5.472 3.097 0 5.562 2.377 5.562 5.472zm-2.591 0c0-1.781-1.332-3.168-2.97-3.168-1.638 0-2.97 1.386-2.97 3.168 0 1.782 1.332 3.168 2.97 3.168 1.638.001 2.97-1.385 2.97-3.168zM77.955 32.481h-2.591v-6.21c0-1.512-.99-2.232-2.053-2.232a3.19 3.19 0 00-2.214.864v7.578h-2.61V22.077h2.61v.774c.648-.648 1.854-1.044 2.79-1.044 2.088 0 4.068 1.296 4.068 4.339v6.335zM89.114 30.915c-1.062 1.205-2.61 1.836-4.248 1.836-3.043 0-5.508-2.34-5.508-5.473 0-3.078 2.43-5.472 5.508-5.472 1.584 0 3.06.576 4.122 1.746l-1.746 1.782c-.522-.703-1.26-1.207-2.34-1.207-1.584 0-2.934 1.422-2.934 3.15 0 1.729 1.331 3.15 2.934 3.15a2.88 2.88 0 002.412-1.314l1.8 1.802zM100.905 27.261c0 .343-.036.702-.091 1.08h-8.315c.395 1.225 1.421 2.196 2.952 2.196.936 0 1.944-.342 2.574-.9l1.638 1.639c-1.44 1.079-2.772 1.476-4.302 1.476-3.115 0-5.563-2.448-5.563-5.472 0-3.025 2.467-5.473 5.544-5.473 2.953 0 5.563 2.25 5.563 5.454zm-2.718-1.008c-.414-1.314-1.548-2.195-2.862-2.195-1.296 0-2.412.882-2.826 2.195h5.688zM112.316 27.297c0 2.934-2.07 5.454-5.004 5.454-.918 0-1.692-.234-2.393-.792l.018 5.04h-2.628V22.06h2.628v.54c.594-.486 1.458-.793 2.376-.793 2.537 0 5.003 2.395 5.003 5.49zm-2.646.017c0-1.962-1.206-3.222-2.917-3.222-.557 0-1.35.252-1.836.63v4.987c.558.522 1.188.774 1.891.774 1.656 0 2.862-1.332 2.862-3.169zM119.516 32.248c-.522.342-1.26.504-1.963.504-2.448 0-3.276-1.188-3.276-3.798V24.4h-1.369v-.99c1.674-.846 2.917-2.358 3.205-4.392h.757v3.043h2.627v2.34h-2.627v4.735c0 1.062.557 1.295 1.169 1.295.415 0 1.062-.126 1.477-.468v2.285zM131.577 27.278c0 3.096-2.467 5.473-5.563 5.473-3.078 0-5.544-2.394-5.544-5.473 0-3.041 2.52-5.472 5.544-5.472 3.096 0 5.563 2.377 5.563 5.472zm-2.593 0c0-1.781-1.332-3.168-2.97-3.168-1.638 0-2.97 1.386-2.97 3.168 0 1.782 1.332 3.168 2.97 3.168 1.638.001 2.97-1.385 2.97-3.168zM148.37 32.481h-2.574v-6.21c0-1.458-.81-2.232-1.836-2.232-.793 0-1.494.234-2.16.81.107.414.162.9.162 1.422v6.21h-2.592v-6.21c0-1.458-.81-2.232-1.817-2.232-.793 0-1.332.27-1.981.864v7.578h-2.591V22.077h2.591v.774c.648-.63 1.567-1.044 2.484-1.044 1.008 0 2.088.468 2.862 1.332 1.08-.954 2.142-1.332 3.456-1.332 2.16 0 3.996 1.26 3.996 4.339v6.335zM159.35 32.481h-2.593v-.793c-.666.667-1.854 1.044-2.772 1.044-2.105 0-4.032-1.296-4.032-4.338v-6.318h2.593v6.191c0 1.512.972 2.232 2.034 2.232a3.06 3.06 0 002.178-.864v-7.56h2.593V32.48h-.001zM172.04 27.261c0 .343-.036.702-.09 1.08h-8.316c.395 1.225 1.422 2.196 2.952 2.196.936 0 1.944-.342 2.574-.9l1.638 1.639c-1.44 1.079-2.771 1.476-4.302 1.476-3.115 0-5.563-2.448-5.563-5.472 0-3.025 2.467-5.473 5.544-5.473 2.953 0 5.563 2.25 5.563 5.454zm-2.719-1.008c-.414-1.314-1.548-2.195-2.862-2.195-1.296 0-2.412.882-2.827 2.195h5.689zM183.452 27.278c0 2.934-2.07 5.454-5.004 5.454-.919 0-1.693-.234-2.394-.793v.54h-2.61V17.542h2.629v5.04c.593-.487 1.458-.792 2.376-.792 2.536 0 5.003 2.394 5.003 5.49zm-2.629 0c0-1.943-1.207-3.204-2.917-3.204-.557 0-1.367.252-1.853.612v5.003c.558.522 1.207.774 1.908.774 1.657.002 2.862-1.312 2.862-3.185zM189.246 32.427a3.513 3.513 0 01-1.493.324c-1.548 0-2.898-.774-2.898-2.863V17.54h2.646v11.898c0 .865.395 1.134.881 1.134.305 0 .594-.09.864-.27v2.125zM201.036 27.261c0 .343-.036.702-.09 1.08h-8.316c.396 1.225 1.422 2.196 2.952 2.196.936 0 1.944-.342 2.575-.9l1.638 1.639c-1.441 1.079-2.772 1.476-4.303 1.476-3.114 0-5.562-2.448-5.562-5.472 0-3.025 2.466-5.473 5.544-5.473 2.952 0 5.562 2.25 5.562 5.454zm-2.717-1.008c-.415-1.314-1.548-2.195-2.863-2.195-1.295 0-2.412.882-2.826 2.195h5.689zM13.85 4v7.471h.51v1.02h14.264v-1.02h.678v7.812H5.7V30.32H40.85V4h-27zm.339.339h15.113v6.792H14.19V4.34zM29.302 29.98H14.36V19.623h14.942V29.98zM6.04 19.623h7.98V29.98H6.04V19.623zM40.51 29.98H29.642V4.34H40.51v25.641zM39.83 30.83H6.378v2.546H39.83v-2.547z"
+                fill="#fff"
+              />
+              <path
+                d="M28.962 18.093h-2.207v-.678H15.717v.678H4v.68h24.962v-.68zM40.17 12.83H29.98v8.49H40.17v-8.49zm-1.504 1.698h-7.182v-.85h7.182v.85z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="text-center text-white px-1 py-32 bg-cover w-full"
+      style="
+        background: url(./images/hero-section/optimizado/cocina-muebles-blancos-horno.jpg);
+        background-position: center;
+        background-size: stretch;
+      "
+    >
+      <h2 class="text-2xl sm:text-4xl font-bold leading-tight">
+        Damos vida a tus Proyectos
+      </h2>
+      <p class="font-medium text-xl sm:text-2xl leading-tight mt-3">
+        Nos encargamos de formar un ambiente grato en tu casa.
+      </p>
+      <div class="mt-6">
+        <button
+          class="tracking-wider uppercase bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded font-semibold"
+        >
+          Portafolio
+        </button>
+        <button
+          class="tracking-wider uppercase bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded font-semibold"
+        >
+          Contacto
+        </button>
+      </div>
+
+      <div class="flex items-center justify-center space-x-10 mt-6 sm:mt-10">
+        <a href="https://www.facebook.com/conceptomueblechile/">
+          <svg
+            class="w-8"
+            viewbox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.926 1.004L14.203 1c-3.06 0-5.037 2.028-5.037 5.168v2.383H6.428A.428.428 0 006 8.979v3.453c0 .236.192.428.428.428h2.738v8.712c0 .236.192.428.428.428h3.573a.428.428 0 00.428-.428V12.86h3.202a.428.428 0 00.428-.428l.001-3.453a.429.429 0 00-.428-.428h-3.203v-2.02c0-.97.231-1.464 1.496-1.464h1.835a.428.428 0 00.428-.429V1.433a.428.428 0 00-.428-.429z"
+              fill="#fff"
+            />
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/conceptomueble">
+          <svg
+            class="w-8"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.005 6.351a5.644 5.644 0 100 11.29 5.644 5.644 0 005.644-5.645 5.644 5.644 0 00-5.644-5.645zm0 9.309a3.663 3.663 0 113.664-3.664 3.662 3.662 0 01-3.664 3.664z"
+              fill="#fff"
+            />
+            <path
+              d="M16.536 1.07c-2.024-.095-7.037-.09-9.063 0-1.78.083-3.35.512-4.617 1.778-2.115 2.116-1.845 4.967-1.845 9.148 0 4.279-.238 7.064 1.845 9.147 2.124 2.123 5.016 1.845 9.148 1.845 4.239 0 5.702.003 7.2-.577 2.038-.791 3.576-2.613 3.726-5.884.096-2.025.09-7.037 0-9.063-.181-3.862-2.253-6.204-6.394-6.395zm3.204 18.673c-1.387 1.387-3.311 1.264-7.763 1.264-4.583 0-6.421.067-7.762-1.277C2.67 18.192 2.95 15.724 2.95 11.98c0-5.064-.52-8.712 4.563-8.972 1.168-.041 1.512-.055 4.451-.055l.042.027c4.885 0 8.717-.511 8.947 4.57.053 1.16.064 1.509.064 4.444 0 4.53.086 6.379-1.277 7.748z"
+              fill="#fff"
+            />
+            <path
+              d="M17.873 7.447a1.32 1.32 0 100-2.638 1.32 1.32 0 000 2.638z"
+              fill="#fff"
+            />
+          </svg>
+        </a>
+        <a href="https://wa.me/56974005058">
+          <svg
+            class="w-8"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-labelledby="wspIcon"
+          >
+            <title id="wspIcon">Enviar mensaje a WhatsApp</title>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1 23l1.554-5.65a10.842 10.842 0 01-1.462-5.45C1.094 5.89 6.008 1 12.046 1c1.44 0 2.864.283 4.193.831a10.959 10.959 0 013.555 2.365 10.899 10.899 0 012.374 3.54c.55 1.323.833 2.741.832 4.173-.002 6.011-4.917 10.902-10.954 10.902h-.004c-1.83 0-3.629-.456-5.235-1.327L1 23zm6.076-3.49l.332.197a9.124 9.124 0 004.634 1.263h.004c5.018 0 9.102-4.065 9.104-9.061.001-1.19-.234-2.369-.69-3.469a9.06 9.06 0 00-1.973-2.94 9.144 9.144 0 00-6.437-2.658c-5.022 0-9.107 4.064-9.109 9.06a9.007 9.007 0 001.392 4.822l.217.343-.92 3.343 3.446-.9zm10.489-5.008c-.069-.114-.251-.182-.525-.318s-1.62-.795-1.87-.886c-.251-.091-.434-.137-.616.136-.183.273-.707.886-.867 1.068-.16.182-.319.204-.593.068-.273-.136-1.155-.424-2.2-1.352-.814-.723-1.364-1.614-1.523-1.887-.16-.273-.017-.42.12-.556.123-.122.274-.318.41-.477.137-.16.183-.273.274-.455.091-.181.046-.34-.023-.477-.068-.136-.616-1.477-.844-2.023-.222-.53-.448-.459-.616-.467-.159-.008-.342-.01-.524-.01a1.01 1.01 0 00-.73.341c-.25.273-.958.932-.958 2.273 0 1.34.98 2.636 1.118 2.817.137.182 1.93 2.934 4.676 4.114.51.218 1.03.41 1.56.573.655.208 1.252.179 1.724.108.526-.078 1.62-.659 1.847-1.295.228-.636.228-1.181.16-1.295z"
+              fill="#fff"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <h1
+        class="text-center font-bold uppercase tracking-wider text-gray-600 pt-12"
+      >
+        Revisa nuestros proyectos
+      </h1>
+      <div class="flex flex-wrap mb-32 px-4">
+        <!-- Card Portafolio-->
+        <div
+          class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10"
+        >
+          <div class=>
+            <img
+              class="w-full object-cover"
+              style="height:32rem; width:32rem;"
+              src="./images/portafolio-landing/originales/test-2.jpg"
+              alt="cocina extractor muebles refrigerador"
+            />
+          </div>
+
+          <div class="w-full">
+            <div class="flex justify-between items-center px-6 py-2">
+              <p class="uppercase text-gray-500 font-semibold tracking-wide">
+                Descripción
+              </p>
+              <p
+                class="uppercase tracking-wide px-1 bg-blue-500 text-white py-1 px-6 rounded-full font-medium"
+              >
+                Rework
+              </p>
+            </div>
+            <p class="px-6 mt-2 mb-3">
+              Reestructuramos una cocina en Andalué completamente para un
+              proyecto personal.
+            </p>
+
+            <div class="flex flex-col">
+              <div class="flex flex-row justify-evenly mb-5">
+                <div class="flex items-center">
+                  <svg
+                    class="text-gray-700 h-8 mr-1"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  <p>Andalué</p>
+                </div>
+
+                <div class="flex items-center">
+                  <svg
+                    class="text-gray-700 h-8 mr-1"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <p>2 meses</p>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2"
+                >
+                  Ver Fotos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card Portafolio-->
+
+        <!-- Card Portafolio-->
+        <div
+          class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10"
+        >
+          <div>
+            <img
+              class="object-cover w-full"
+              style="height: 32rem; width:32rem"
+              src="./images/portafolio-landing/optimizado/cocina-muebles-vintage-concepcion.jpg"
+              alt="cocina extractor muebles refrigerador"
+            />
+          </div>
+
+          <div class="w-full">
+            <div class="flex justify-between items-center px-6 py-2">
+              <p class="uppercase text-gray-500 font-semibold tracking-wide">
+                Descripción
+              </p>
+              <p
+                class="uppercase tracking-wide  bg-yellow-400 text-white py-1 px-6 rounded-full font-medium"
+              >
+                Modern
+              </p>
+            </div>
+            <p class="px-6 mt-2 mb-3">
+              Reestructuramos una cocina en Andalué completamente para un
+              proyecto personal.
+            </p>
+
+            <div class="flex flex-col">
+              <div class="flex flex-row justify-evenly mb-5">
+                <div class="flex items-center">
+                  <svg
+                    class="text-gray-700 h-8 mr-1"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    ></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  <p>Andalué</p>
+                </div>
+
+                <div class="flex items-center">
+                  <svg
+                    class="text-gray-700 h-8 mr-1"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <p>2 meses</p>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2"
+                >
+                  Ver Fotos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card Portafolio-->
+
+        <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
+          <div class=>
+            <img class="w-full object-cover" style="height:32rem; width:32rem;"
+              src="./images/portafolio-landing/optimizado/cocina-extractor-horno-gris.jpg" alt="cocina extractor muebles refrigerador" />
+          </div>
+        
+          <div class="w-full">
+            <div class="flex justify-between items-center px-6 py-2">
+              <p class="uppercase text-gray-500 font-semibold tracking-wide">
+                Descripción
+              </p>
+              <p class="uppercase tracking-wide  bg-green-500 text-white py-1 px-6 rounded-full font-medium">
+                Custom
+              </p>
+            </div>
+            <p class="px-6 mt-2 mb-3">
+              Reestructuramos una cocina en Andalué completamente para un
+              proyecto personal.
+            </p>
+        
+            <div class="flex flex-col">
+              <div class="flex flex-row justify-evenly mb-5">
+                <div class="flex items-center">
+                  <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  <p>Andalué</p>
+                </div>
+        
+                <div class="flex items-center">
+                  <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <p>2 meses</p>
+                </div>
+              </div>
+              <div>
+                <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
+                  Ver Fotos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 w-full text-white flex flex-col items-center">
+        <h2 class="text-3xl font-bold uppercase tracking-wider mb-6">
+          Metodología
+        </h2>
+
+        <div class="flex flex-col md:flex-row md:space-x-32">
+          <div class="flex flex-col items-center">
+            <div>
+              <div class="relative" style="bottom: -30px; right: 10px;">
+                <p class="text-xl font-semibold text-gray-500">1</p>
+              </div>
+              <svg
+                class="fill-current text-white h-32"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.542 2.473a1.602 1.602 0 00-2.274 0l-.758.758a1.589 1.589 0 00-1.495.42l-4.528 4.525H4.843A2.857 2.857 0 002 11.016v8.143A2.857 2.857 0 004.843 22h8.15a2.857 2.857 0 002.842-2.84V11.52l3.96-3.934.168.273c.252.42.19.968-.169 1.326l-2.527 2.525a.495.495 0 00.358.841.493.493 0 00.358-.147L20.51 9.88c.674-.673.8-1.704.316-2.525l-.316-.526c.21-.273.316-.61.316-.947 0-.126-.021-.252-.042-.379l.758-.757c.61-.61.61-1.641 0-2.273zm-3.854 1.894a.586.586 0 01.443-.168.68.68 0 01.442.168l1.074 1.094a.639.639 0 01.168.442.679.679 0 01-.168.442l-2.97 2.925-1.937-1.936 2.948-2.967zm-7.307 11.215a3.28 3.28 0 01-.421.337l-1.874-1.873c.105-.147.21-.294.337-.42l5.601-5.598 1.959 1.957-5.602 5.597zm-3.348 1.39c0-.737.19-1.432.505-2.084l1.58 1.557a4.505 4.505 0 01-2.085.526zm7.812 2.187c0 1.01-.82 1.852-1.853 1.852h-8.15c-1.01 0-1.852-.82-1.852-1.852v-8.143c0-1.01.821-1.851 1.853-1.851h6.633L7.728 12.93c-1.158 1.136-1.748 2.714-1.685 4.335l-.695.694a.495.495 0 00.358.842.493.493 0 00.358-.148l.695-.694c.084 0 .169.021.253.021 1.516 0 2.99-.61 4.085-1.683l3.77-3.767v6.628h-.022zm5.981-15.107l-.59.589-.863-.863.59-.59a.624.624 0 01.863 0 .586.586 0 010 .864z"
+                />
+              </svg>
+            </div>
+            <p class="font-semibold text-center text-2xl">
+              Agendamos <br />
+              una visita
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div>
+              <div class="relative" style="bottom: -30px; right: 10px;">
+                <p class="text-xl font-semibold text-gray-500">2</p>
+              </div>
+              <svg
+                class="fill-current text-white h-32"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.694 12.902a.32.32 0 00.226.098.31.31 0 00.226-.098l.96-1a.335.335 0 00.094-.235.345.345 0 00-.094-.236L19.28 9.529V5h.32a.314.314 0 00.226-.098.34.34 0 00.094-.235V3.333a.34.34 0 00-.094-.235A.314.314 0 0019.6 3h-3.52a.314.314 0 00-.226.098.34.34 0 00-.094.235v1.334a.34.34 0 00.094.235c.06.063.141.098.226.098h.32v1.529L13.426 3.43a.319.319 0 00-.226-.098.31.31 0 00-.226.098l-1.902 1.98A4.812 4.812 0 009.11 2.742a4.488 4.488 0 00-3.16-.688A4.593 4.593 0 003.123 3.68 4.952 4.952 0 002 6.833v3a4.96 4.96 0 001.09 3.106 4.607 4.607 0 002.75 1.65v2.94l-.094-.098a.32.32 0 00-.226-.098.308.308 0 00-.226.098l-.64.667a.34.34 0 00-.094.235v.334h-.64v-.334a.34.34 0 00-.094-.235l-.64-.667a.318.318 0 00-.226-.098.308.308 0 00-.226.098l-.64.667a.34.34 0 00-.094.235v3.334a.34.34 0 00.094.235c.06.063.141.098.226.098H3.6a.314.314 0 00.226-.098.34.34 0 00.094-.235v-1h.64v1a.34.34 0 00.094.235c.06.063.141.098.226.098h15.36a.314.314 0 00.226-.098.34.34 0 00.094-.235v-3.334a.34.34 0 00-.094-.235l-.64-.667a.317.317 0 00-.226-.098.309.309 0 00-.226.098l-.094.098V12.47l.414.431zM3.28 21.333h-.64v-2.862l.32-.333.32.333v2.862zM16.4 3.667h2.88v.666H16.4v-.666zM17.04 5h1.6v3.862l-1.6-1.667V5zm-3.84-.862l7.227 7.529-.507.528-6.494-6.764a.319.319 0 00-.226-.098.31.31 0 00-.226.098L6.48 12.195l-.508-.528L13.2 4.138zM2.64 9.833v-3c0-1.028.365-2.02 1.025-2.786A3.947 3.947 0 016.216 2.69a3.88 3.88 0 012.768.768 4.183 4.183 0 011.564 2.5L5.294 11.43a.333.333 0 00-.094.236.345.345 0 00.094.235l.96 1A.32.32 0 006.48 13a.31.31 0 00.226-.098l.414-.43v1.495c-.16.02-.32.032-.48.033a3.926 3.926 0 01-2.827-1.222A4.26 4.26 0 012.64 9.833zM3.92 20v-.667h.64V20h-.64zm1.28-1.529l.32-.333.32.333v2.862H5.2v-2.862zm1.28-3.813c.054.002.106.009.16.009.16-.001.32-.01.48-.028v6.694h-.64v-6.675zm2.56 6.675v-8h2.56v8H9.04zm7.68 0v-2.862l.32-.333.32.333v2.862h-.64zm1.28-2h.64V20H18v-.667zm0 2v-.666h.64v.666H18zm1.6-3.195l.32.333v2.862h-.64v-2.862l.32-.333zm-.96.529H18v-.334a.34.34 0 00-.094-.235l-.64-.667a.317.317 0 00-.226-.098.309.309 0 00-.226.098l-.64.667a.34.34 0 00-.094.235v3h-3.84V13a.34.34 0 00-.094-.236.313.313 0 00-.226-.097h-3.2a.313.313 0 00-.226.097A.34.34 0 008.4 13v8.333h-.64v-9.528l5.44-5.667 5.44 5.667v6.862z"
+                />
+                <path
+                  d="M10 18c.177 0 .32-.15.32-.333a.327.327 0 00-.32-.334c-.177 0-.32.15-.32.334 0 .184.143.333.32.333zM12.88 13v3.333a.34.34 0 00.094.236c.06.063.141.098.226.098h4.48a.314.314 0 00.226-.098.34.34 0 00.094-.236V13a.34.34 0 00-.094-.236.314.314 0 00-.226-.097H13.2a.314.314 0 00-.226.097.34.34 0 00-.094.236zm.64 2h1.6v1h-1.6v-1zm2.24 1v-1h1.6v1h-1.6zm1.6-1.667h-1.6v-1h1.6v1zm-2.24-1v1h-1.6v-1h1.6z"
+                />
+              </svg>
+            </div>
+            <p class="font-semibold text-center text-2xl">
+              Visitamos el <br />
+              terreno
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div>
+              <div class="relative" style="bottom: -30px; right: 10px;">
+                <p class="text-xl font-semibold text-gray-500">3</p>
+              </div>
+              <svg
+                class="fill-current text-white h-32"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.15 7.689H7.75v.78h6.399v-.78zM14.15 10.597H7.75v.779h6.399v-.78zM14.15 13.504H7.75v.78h6.399v-.78zM14.15 16.412H7.75v.78h6.399v-.78zM6.588 7.689H5.425v.78h1.163v-.78zM6.588 10.597H5.425v.779h1.163v-.78zM6.588 13.504H5.425v.78h1.163v-.78zM6.588 16.412H5.425v.78h1.163v-.78z"
+                  fill="#fff"
+                />
+                <path
+                  d="M12.417 2.17H11.34V1H8.235v1.17H7.157l-.218.872H3V19.81h13.574V3.035h-3.939l-.218-.866zm-4.652.779h1.25v-1.17h1.547v1.17h1.247l.39 1.547h-4.82l.386-1.547zm8.03.873v15.207H3.78V3.814h2.964l-.365 1.454h6.822l-.365-1.454 2.959.008zM18.703 1v15.893L20.262 20l1.559-3.107V1h-3.119zm2.326.78v2.128h-1.547V1.78h1.547zm-.779 16.476l-.78-1.548V4.688h1.548V16.71l-.768 1.546z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <p class="font-semibold text-center text-2xl">
+              Presupuesto <br />
+              Formal
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div>
+              <div class="relative" style="bottom: -30px; right: 10px;">
+                <p class="text-xl font-semibold text-gray-500">4</p>
+              </div>
+              <svg
+                class="fill-current text-white h-32"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.714 20.107l-1.908-2.238-.053.87-2.079-1.044v-7.35-.01a.308.308 0 00-.005-.047l-.005-.021-.005-.02a.323.323 0 00-.008-.022l-.01-.024-.003-.01-.004-.006-.012-.02a.375.375 0 00-.014-.022l-.012-.015-.014-.015a.314.314 0 00-.018-.019l-.015-.014-.016-.011a.294.294 0 00-.021-.015l-.02-.012c-.003 0-.005-.003-.007-.004L12.2 7.384v-2.01l.799.341L11.857 3l-1.141 2.715.798-.34v2.009l-5.286 2.654-.006.004-.021.012a.407.407 0 00-.021.015l-.015.01-.016.015a.33.33 0 00-.018.019l-.014.015c-.005.005-.008.01-.012.016l-.014.021-.012.02-.004.007-.004.01a.286.286 0 00-.01.023l-.007.022a.33.33 0 00-.013.066l-.001.023-.001.01v7.349l-2.078 1.043-.054-.87L2 20.109l2.928-.19-.66-.565 2.114-1.062 5.322 2.673.014.006.012.005a.348.348 0 00.127.025.329.329 0 00.128-.025l.012-.005.014-.006 5.322-2.673 2.114 1.062-.66.565 2.927.19zm-9.515-6.8l4.791-2.405v6.449l-4.79-2.406v-1.637zm4.368-2.961L12.2 12.539V8.152l4.368 2.194zm-5.052 2.193l-4.368-2.193 4.368-2.194v4.387zm-4.79-1.637l4.79 2.405v1.638l-4.79 2.406V10.9zm4.79 4.812V20.1l-4.368-2.193 4.368-2.194zm.684 4.386v-4.387l4.368 2.194-4.368 2.193z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <p class="font-semibold text-center text-2xl">
+              Modelamiento <br />
+              3D
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div>
+              <div class="relative" style="bottom: -30px; right: 10px;">
+                <p class="text-xl font-semibold text-gray-500">5</p>
+              </div>
+              <svg
+                viewBox="0 0 24 24"
+                clasS="w-32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 21A9.5 9.5 0 103 11.5a9.51 9.51 0 009.5 9.5zm0-17.417a7.917 7.917 0 110 15.834 7.917 7.917 0 010-15.834z"
+                  fill="#fff"
+                />
+                <path
+                  d="M11.148 14.435a.791.791 0 00.56.232h.036a.792.792 0 00.572-.285l3.958-4.75a.791.791 0 00-1.215-1.014l-3.404 4.083-1.761-1.761a.792.792 0 10-1.12 1.12l2.374 2.375z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <p class="font-semibold text-center text-2xl">
+              Cierre del <br />
+              Proyecto
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <button
+            class="bg-blue-600 px-16 py-2 uppercase font-semibold tracking-wider mt-6 mb-6 rounded-md"
+          >
+            Contacto
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="bg-gray-200 w-full px-4">
+      <div class="absolute left-auto z-0 hidden">
+        <img
+          src="./images/furniture/closet-con-sillas-ropa.jpg"
+          alt=""
+          style="max-width: 500px;"
+        />
+      </div>
+
+      <div class="py-12">
+        <div class="max-w-xl shadow-md bg-white mx-auto px-4 py-12">
+          <div class="flex flex-row items-center justify-around">
+            <div>
+              <img
+                class="w-12 sm:w-20"
+                src="./images/icons/creacion-de-closets-para-dormitorios.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="w-12 sm:w-16"
+                src="./images/icons/diseno-de-cocinas-hornos.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="w-12 sm:w-16"
+                src="./images/icons/fabricacion-de-muebles-living-room.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="w-12 sm:w-16"
+                src="./images/icons/diseno-de-banos.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="md:px-8">
+            <h2
+              class="text-3xl sm:text-4xl font-semibold leading-none mt-3 leading-none"
+            >
+              También fabricamos <br />
+              furniture para tu proyecto.
+            </h2>
+            <p
+              class="text-xl font-regular text-lg leading-none leading mt-4 leading-tight"
+            >
+              Te ayudamos a crear distintos muebles para mejorar tu espacio.
+            </p>
+            <div>
+              <button
+                class="bg-gray-800 text-white font-bold tracking-widest uppercase mt-3 py-2 px-8 rounded-md"
+              >
+                Ver Fotos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-200">
+        <h3
+          class="uppercase tracking-wide font-semibold text-gray-700 text-center mt-6"
+        >
+          Ultima Tecnologia Modelamiento 3D
+        </h3>
+        <div
+          class="flex flex-col sm:flex-row sm:justify-center sm:space-x-10 items-center"
+        >
+          <div class="mt-2">
+            <img
+              src="./images/icons/sketchup-modelamiento-de-cocinas.svg"
+              alt="sketch modelamiento de cocinas"
+              class="w-48"
+            />
+          </div>
+          <div class="mt-4">
+            <img
+              src="./images/icons/lumion-modelamiento-3d.svg"
+              class="w-24"
+              alt="lumion renderizado 3d plugin sketch cocinas"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-xl mx-auto bg-white mt-4 relative py-4"
+        style="bottom: -30px;"
+      >
+        <h2 class="text-3xl text-center font-bold leading-8 mt-1 mb-4">
+          Haz realidad tu proyecto
+        </h2>
+        <div
+          class="flex flex-col sm:flex-row justify-around items-center text-white mt-2"
+        >
+          <div>
+            <button class="py-2 px-4 bg-gray-800 font-semibold rounded-md">
+              Ponte en contacto
+            </button>
+          </div>
+          <div>
+            <button
+              class="font-semibold bg-gray-800 py-2 px-4 rounded-md mt-2 sm:mt-0"
+            >
+              Ver mas fotos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white flex justify-center">
+      <div
+        class="border-red-800 mx-auto inline-block mt-10 flex flex-col items-center space-y-6"
+      >
+        <nav>
+          <div class="text-center font-medium space-x-10">
+            <a href="#" class="">Inicio</a>
+            <a href="#" class="">Portafolio</a>
+            <a href="#">Metodologia</a>
+            <a href="#">Muebleria</a>
+            <a href="#"> Contacto</a>
+          </div>
+        </nav>
+        <div class="text-center">
+          <p class="font-bold">&copy; Concepto Mueble 2018-2020</p>
+          <p>
+            Desarrollado por
+            <a href="https://www.espacio126.cl" class="font-semibold"
+              >Espacio 126</a
+            >
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <a href="#">
+            <svg
+              viewBox="0 0 206 40"
+              class="w-64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55.293 30.915c-1.062 1.205-2.61 1.836-4.248 1.836-3.043 0-5.508-2.34-5.508-5.473 0-3.078 2.43-5.472 5.508-5.472 1.584 0 3.06.576 4.122 1.746l-1.746 1.782c-.522-.703-1.26-1.207-2.34-1.207-1.584 0-2.934 1.422-2.934 3.15 0 1.729 1.331 3.15 2.934 3.15a2.88 2.88 0 002.412-1.314l1.8 1.802zM67.082 27.278c0 3.096-2.466 5.473-5.562 5.473-3.079 0-5.544-2.394-5.544-5.473 0-3.041 2.52-5.472 5.544-5.472 3.097 0 5.562 2.377 5.562 5.472zm-2.591 0c0-1.781-1.332-3.168-2.97-3.168-1.638 0-2.97 1.386-2.97 3.168 0 1.782 1.332 3.168 2.97 3.168 1.638.001 2.97-1.385 2.97-3.168zM77.955 32.481h-2.591v-6.21c0-1.512-.99-2.232-2.053-2.232a3.19 3.19 0 00-2.214.864v7.578h-2.61V22.077h2.61v.774c.648-.648 1.854-1.044 2.79-1.044 2.088 0 4.068 1.296 4.068 4.339v6.335zM89.114 30.915c-1.062 1.205-2.61 1.836-4.248 1.836-3.043 0-5.508-2.34-5.508-5.473 0-3.078 2.43-5.472 5.508-5.472 1.584 0 3.06.576 4.122 1.746l-1.746 1.782c-.522-.703-1.26-1.207-2.34-1.207-1.584 0-2.934 1.422-2.934 3.15 0 1.729 1.331 3.15 2.934 3.15a2.88 2.88 0 002.412-1.314l1.8 1.802zM100.905 27.261c0 .343-.036.702-.091 1.08h-8.315c.395 1.225 1.421 2.196 2.952 2.196.936 0 1.944-.342 2.574-.9l1.638 1.639c-1.44 1.079-2.772 1.476-4.302 1.476-3.115 0-5.563-2.448-5.563-5.472 0-3.025 2.467-5.473 5.544-5.473 2.953 0 5.563 2.25 5.563 5.454zm-2.718-1.008c-.414-1.314-1.548-2.195-2.862-2.195-1.296 0-2.412.882-2.826 2.195h5.688zM112.316 27.297c0 2.934-2.07 5.454-5.004 5.454-.918 0-1.692-.234-2.393-.792l.018 5.04h-2.628V22.06h2.628v.54c.594-.486 1.458-.793 2.376-.793 2.537 0 5.003 2.395 5.003 5.49zm-2.646.017c0-1.962-1.206-3.222-2.917-3.222-.557 0-1.35.252-1.836.63v4.987c.558.522 1.188.774 1.891.774 1.656 0 2.862-1.332 2.862-3.169zM119.516 32.248c-.522.342-1.26.504-1.963.504-2.448 0-3.276-1.188-3.276-3.798V24.4h-1.369v-.99c1.674-.846 2.917-2.358 3.205-4.392h.757v3.043h2.627v2.34h-2.627v4.735c0 1.062.557 1.295 1.169 1.295.415 0 1.062-.126 1.477-.468v2.285zM131.577 27.278c0 3.096-2.467 5.473-5.563 5.473-3.078 0-5.544-2.394-5.544-5.473 0-3.041 2.52-5.472 5.544-5.472 3.096 0 5.563 2.377 5.563 5.472zm-2.593 0c0-1.781-1.332-3.168-2.97-3.168-1.638 0-2.97 1.386-2.97 3.168 0 1.782 1.332 3.168 2.97 3.168 1.638.001 2.97-1.385 2.97-3.168zM148.37 32.481h-2.574v-6.21c0-1.458-.81-2.232-1.836-2.232-.793 0-1.494.234-2.16.81.107.414.162.9.162 1.422v6.21h-2.592v-6.21c0-1.458-.81-2.232-1.817-2.232-.793 0-1.332.27-1.981.864v7.578h-2.591V22.077h2.591v.774c.648-.63 1.567-1.044 2.484-1.044 1.008 0 2.088.468 2.862 1.332 1.08-.954 2.142-1.332 3.456-1.332 2.16 0 3.996 1.26 3.996 4.339v6.335zM159.35 32.481h-2.593v-.793c-.666.667-1.854 1.044-2.772 1.044-2.105 0-4.032-1.296-4.032-4.338v-6.318h2.593v6.191c0 1.512.972 2.232 2.034 2.232a3.06 3.06 0 002.178-.864v-7.56h2.593V32.48h-.001zM172.04 27.261c0 .343-.036.702-.09 1.08h-8.316c.395 1.225 1.422 2.196 2.952 2.196.936 0 1.944-.342 2.574-.9l1.638 1.639c-1.44 1.079-2.771 1.476-4.302 1.476-3.115 0-5.563-2.448-5.563-5.472 0-3.025 2.467-5.473 5.544-5.473 2.953 0 5.563 2.25 5.563 5.454zm-2.719-1.008c-.414-1.314-1.548-2.195-2.862-2.195-1.296 0-2.412.882-2.827 2.195h5.689zM183.452 27.278c0 2.934-2.07 5.454-5.004 5.454-.919 0-1.693-.234-2.394-.793v.54h-2.61V17.542h2.629v5.04c.593-.487 1.458-.792 2.376-.792 2.536 0 5.003 2.394 5.003 5.49zm-2.629 0c0-1.943-1.207-3.204-2.917-3.204-.557 0-1.367.252-1.853.612v5.003c.558.522 1.207.774 1.908.774 1.657.002 2.862-1.312 2.862-3.185zM189.246 32.427a3.513 3.513 0 01-1.493.324c-1.548 0-2.898-.774-2.898-2.863V17.54h2.646v11.898c0 .865.395 1.134.881 1.134.305 0 .594-.09.864-.27v2.125zM201.036 27.261c0 .343-.036.702-.09 1.08h-8.316c.396 1.225 1.422 2.196 2.952 2.196.936 0 1.944-.342 2.575-.9l1.638 1.639c-1.441 1.079-2.772 1.476-4.303 1.476-3.114 0-5.562-2.448-5.562-5.472 0-3.025 2.466-5.473 5.544-5.473 2.952 0 5.562 2.25 5.562 5.454zm-2.717-1.008c-.415-1.314-1.548-2.195-2.863-2.195-1.295 0-2.412.882-2.826 2.195h5.689zM13.85 4v7.471h.51v1.02h14.264v-1.02h.678v7.812H5.7V30.32H40.85V4h-27zm.339.339h15.113v6.792H14.19V4.34zM29.302 29.98H14.36V19.623h14.942V29.98zM6.04 19.623h7.98V29.98H6.04V19.623zM40.51 29.98H29.642V4.34H40.51v25.641zM39.83 30.83H6.378v2.546H39.83v-2.547z"
+                fill="#fff"
+              />
+              <path
+                d="M28.962 18.093h-2.207v-.678H15.717v.678H4v.68h24.962v-.68zM40.17 12.83H29.98v8.49H40.17v-8.49zm-1.504 1.698h-7.182v-.85h7.182v.85z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

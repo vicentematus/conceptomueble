@@ -20,6 +20,7 @@
   "dependencies": {
     "autoprefixer": "9.8.4",
     "cssnano": "4.1.10",
+    "lightgallery.js": "^1.2.0",
     "postcss-cli": "7.1.1",
     "tailwindcss": "1.4.6"
   },

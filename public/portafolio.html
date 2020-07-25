@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/lightgallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body class="antialiased bg-white">
     <header class="bg-gray-900 py-4">
@@ -35,98 +37,63 @@
       </div>
     </header>
     <main class="flex flex-col items-center">
-      <!-- <div
-        class="max-w-3xl flex flex-col items-center justify-center sm:flex-row shadow-md px-4 mt-6 mb-6 border-b-4 border-gray-900 py-8"
-      >
-        <div class="">
-          <div>
-            <h1 class="font-bold text-2xl">Departamento en Concepcion</h1>
-          </div>
-          <div class="flex justify-around mt-2">
-            <div class="flex items-center">
-              <svg
-                class="text-gray-700 h-8 mr-1"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                ></path>
-                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              <p>Concepción</p>
-            </div>
-            <div class="flex items-center">
-              <svg
-                class="text-gray-700 h-8 mr-1"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <p>2 meses</p>
-            </div>
-          </div>
-        </div>
-        <div class="px-4 w-6/12">
-          <p>
-            Trabajamos en un departamento dandole un enfoque a aprovechar el
-            maximo espacio posible dentro de un departamento compacto.
-          </p>
-        </div>
-      </div> -->
-
       <h1 class="text-3xl font-bold text-center mt-4">
         Departamento en Concepción
       </h1>
-      <div class="grid sm:grid-cols-3 gap-4 mt-4">
-        <!-- <div class="">
-          <img
-            class="object-cover"
-            style="height: 260px; min-width: 390px; max-width: 566px;"
-            src="./images/portafolio/optimizados/horno-teka-en-una-cocina.jpg"
-            alt="horno electrico negro en mueble"
-          />
-        </div> -->
-        <div>
+      <div class="grid sm:grid-cols-3 gap-4 mt-4" id="lightgallery">
+        <a
+          href="./images/portafolio/optimizados/mueble-blanco-platos-de-cocina.jpg"
+        >
           <img
             src="./images/portafolio/optimizados/mueble-blanco-platos-de-cocina.jpg"
             alt="mueble blanco para guardar platos y loza"
           />
-        </div>
-        <div>
+        </a>
+
+        <a href="./images/portafolio/optimizados/cocina-mueble-blanco.jpg">
           <img
             src="./images/portafolio/optimizados/cocina-mueble-blanco.jpg"
             alt="mueble para platos blanco deslizable"
           />
-        </div>
-        <div>
+        </a>
+
+        <a href="./images/portafolio/optimizados/fogon-cocina.jpg">
           <img
             src="./images/portafolio/optimizados/fogon-cocina.jpg"
             alt="fogon de cocina electrico"
           />
-        </div>
-        <div>
+        </a>
+
+        <a
+          href="./images/portafolio/optimizados/lavamanos-cocina-blanco.jpg
+        "
+        >
           <img
             src="./images/portafolio/optimizados/lavamanos-cocina-blanco.jpg"
             alt=""
           />
-        </div>
-        <div>
+        </a>
+        <a
+          href="./images/portafolio/optimizados/lavamanos-cocina-blanco.jpg
+        "
+        >
           <img
             src="./images/portafolio/optimizados/muebles-deslizables-blancos.jpg"
             alt="muebles blancos deslizables"
+            class="w-64"
           />
-        </div>
+        </a>
       </div>
     </main>
+    <script src="./js/lightgallery-all.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#lightgallery").lightGallery({
+          thumbnail: true,
+          selector: "a",
+        });
+      });
+    </script>
   </body>
 </html>

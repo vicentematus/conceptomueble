@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      spacing: {
+        galleryHeight: "19rem",
+        galleryWidth: "31rem",
+      },
     },
     colors,
   },

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
+
+.gallery-photo {
+  @apply w-galleryWidth h-galleryHeight object-cover;
+}
 @tailwind utilities;

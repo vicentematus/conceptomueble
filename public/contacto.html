@@ -10,6 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* RED BORDER ON INVALID INPUT */
+      .check input:invalid {
+        border-color: red;
+      }
+
+      /* FLOATING LABEL */
+      .label-floating input:not(:placeholder-shown),
+      .label-floating textarea:not(:placeholder-shown) {
+        padding-top: 1.4rem;
+      }
+
+      .label-floating input:not(:placeholder-shown) ~ label,
+      .label-floating textarea:not(:placeholder-shown) ~ label {
+        font-size: 0.8rem;
+        transition: all 0.2s ease-in-out;
+        color: #1f9d55;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body class="antialiased bg-white">
     <header class="bg-gray-900 py-4">
@@ -34,307 +54,80 @@
         </div>
       </div>
     </header>
-    <h1 class="text-4xl text-center font-semibold pt-10">Revisa nuestros proyectos</h1>
-    <div class="flex flex-wrap mb-32 px-4">
-      <!-- Card Portafolio-->
-      <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
-        <div class=>
-          <img class="w-full object-cover" style="height:32rem; width:32rem;"
-            src="./images/portafolio-landing/originales/test-2.jpg" alt="cocina extractor muebles refrigerador" />
-        </div>
-    
-        <div class="w-full">
-          <div class="flex justify-between items-center px-6 py-2">
-            <p class="uppercase text-gray-500 font-semibold tracking-wide">
-              Descripción
-            </p>
-            <p class="uppercase tracking-wide px-1 bg-blue-500 text-white py-1 px-6 rounded-full font-medium">
-              Rework
-            </p>
-          </div>
-          <p class="px-6 mt-2 mb-3">
-            Reestructuramos una cocina en Andalué completamente para un
-            proyecto personal.
-          </p>
-    
-          <div class="flex flex-col">
-            <div class="flex flex-row justify-evenly mb-5">
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <p>Andalué</p>
-              </div>
-    
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p>2 meses</p>
-              </div>
-            </div>
-            <div>
-              <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
-                Ver Fotos
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Card Portafolio-->
-    
-      <!-- Card Portafolio-->
-      <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
-        <div>
-          <img class="object-cover w-full" style="height: 32rem; width:32rem"
-            src="./images/portafolio-landing/optimizado/cocina-muebles-vintage-concepcion.jpg"
-            alt="cocina extractor muebles refrigerador" />
-        </div>
-    
-        <div class="w-full">
-          <div class="flex justify-between items-center px-6 py-2">
-            <p class="uppercase text-gray-500 font-semibold tracking-wide">
-              Descripción
-            </p>
-            <p class="uppercase tracking-wide  bg-yellow-400 text-white py-1 px-6 rounded-full font-medium">
-              Modern
-            </p>
-          </div>
-          <p class="px-6 mt-2 mb-3">
-            Reestructuramos una cocina en Andalué completamente para un
-            proyecto personal.
-          </p>
-    
-          <div class="flex flex-col">
-            <div class="flex flex-row justify-evenly mb-5">
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <p>Andalué</p>
-              </div>
-    
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p>2 meses</p>
-              </div>
-            </div>
-            <div>
-              <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
-                Ver Fotos
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Card Portafolio-->
-    
-      <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
-        <div class=>
-          <img class="w-full object-cover" style="height:32rem; width:32rem;"
-            src="./images/portafolio-landing/optimizado/cocina-extractor-horno-gris.jpg"
-            alt="cocina extractor muebles refrigerador" />
-        </div>
-    
-        <div class="w-full">
-          <div class="flex justify-between items-center px-6 py-2">
-            <p class="uppercase text-gray-500 font-semibold tracking-wide">
-              Descripción
-            </p>
-            <p class="uppercase tracking-wide  bg-green-500 text-white py-1 px-6 rounded-full font-medium">
-              Custom
-            </p>
-          </div>
-          <p class="px-6 mt-2 mb-3">
-            Reestructuramos una cocina en Andalué completamente para un
-            proyecto personal.
-          </p>
-    
-          <div class="flex flex-col">
-            <div class="flex flex-row justify-evenly mb-5">
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <p>Andalué</p>
-              </div>
-    
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p>2 meses</p>
-              </div>
-            </div>
-            <div>
-              <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
-                Ver Fotos
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Card Portafolio-->
-      <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
-        <div class=>
-          <img class="w-full object-cover" style="height:32rem; width:32rem;"
-            src="./images/portafolio-landing/originales/test-2.jpg" alt="cocina extractor muebles refrigerador" />
-        </div>
-      
-        <div class="w-full">
-          <div class="flex justify-between items-center px-6 py-2">
-            <p class="uppercase text-gray-500 font-semibold tracking-wide">
-              Descripción
-            </p>
-            <p class="uppercase tracking-wide px-1 bg-blue-500 text-white py-1 px-6 rounded-full font-medium">
-              Rework
-            </p>
-          </div>
-          <p class="px-6 mt-2 mb-3">
-            Reestructuramos una cocina en Andalué completamente para un
-            proyecto personal.
-          </p>
-      
-          <div class="flex flex-col">
-            <div class="flex flex-row justify-evenly mb-5">
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <p>Andalué</p>
-              </div>
-      
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p>2 meses</p>
-              </div>
-            </div>
-            <div>
-              <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
-                Ver Fotos
-              </button>
-            </div>
+    <div>
+      <form
+        id="contact-me"
+        class="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <h2 class="w-full text-3xl font-bold leading-tight my-5">
+          Formulario de Contacto
+        </h2>
+        <!-- name field -->
+        <div class="flex flex-wrap mb-6">
+          <div class="relative w-full appearance-none label-floating">
+            <input
+              class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+              id="name"
+              type="text"
+              placeholder="Tu nombre"
+              required
+            />
+            <label
+              for="name"
+              class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+            >
+              Tu nombre
+            </label>
           </div>
         </div>
-      </div>
-      <!-- End Card Portafolio-->
-      
-      <!-- Card Portafolio-->
-      <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
-        <div>
-          <img class="object-cover w-full" style="height: 32rem; width:32rem"
-            src="./images/portafolio-landing/optimizado/cocina-muebles-vintage-concepcion.jpg"
-            alt="cocina extractor muebles refrigerador" />
-        </div>
-      
-        <div class="w-full">
-          <div class="flex justify-between items-center px-6 py-2">
-            <p class="uppercase text-gray-500 font-semibold tracking-wide">
-              Descripción
-            </p>
-            <p class="uppercase tracking-wide  bg-yellow-400 text-white py-1 px-6 rounded-full font-medium">
-              Modern
-            </p>
-          </div>
-          <p class="px-6 mt-2 mb-3">
-            Reestructuramos una cocina en Andalué completamente para un
-            proyecto personal.
-          </p>
-      
-          <div class="flex flex-col">
-            <div class="flex flex-row justify-evenly mb-5">
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <p>Andalué</p>
-              </div>
-      
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p>2 meses</p>
-              </div>
-            </div>
-            <div>
-              <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
-                Ver Fotos
-              </button>
-            </div>
+        <!-- email field -->
+        <div class="flex flex-wrap mb-6">
+          <div class="relative w-full appearance-none label-floating">
+            <input
+              class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+              id="name"
+              type="text"
+              placeholder="Tu correo electronico"
+              required
+            />
+            <label
+              for="name"
+              class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+            >
+              Tu correo electronico
+            </label>
           </div>
         </div>
-      </div>
-      <!-- End Card Portafolio-->
-      
-      <div class="max-w-sm rounded-md h-full overflow-hidden shadow-lg mx-auto mt-10">
-        <div class=>
-          <img class="w-full object-cover" style="height:32rem; width:32rem;"
-            src="./images/portafolio-landing/optimizado/cocina-extractor-horno-gris.jpg"
-            alt="cocina extractor muebles refrigerador" />
-        </div>
-      
-        <div class="w-full">
-          <div class="flex justify-between items-center px-6 py-2">
-            <p class="uppercase text-gray-500 font-semibold tracking-wide">
-              Descripción
-            </p>
-            <p class="uppercase tracking-wide  bg-green-500 text-white py-1 px-6 rounded-full font-medium">
-              Custom
-            </p>
-          </div>
-          <p class="px-6 mt-2 mb-3">
-            Reestructuramos una cocina en Andalué completamente para un
-            proyecto personal.
-          </p>
-      
-          <div class="flex flex-col">
-            <div class="flex flex-row justify-evenly mb-5">
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <p>Andalué</p>
-              </div>
-      
-              <div class="flex items-center">
-                <svg class="text-gray-700 h-8 mr-1" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p>2 meses</p>
-              </div>
-            </div>
-            <div>
-              <button class="w-full bg-gray-800 text-white font-bold uppercase tracking-wider py-2">
-                Ver Fotos
-              </button>
-            </div>
+        <!-- Message field -->
+        <div class="flex flex-wrap mb-6">
+          <div class="relative w-full appearance-none label-floating">
+            <textarea
+              class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+              id="message"
+              type="text"
+              placeholder="Ingresa tu mensaje"
+            ></textarea>
+            <label
+              for="message"
+              class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+              >Ingresa tu mensaje
+            </label>
           </div>
         </div>
-      </div>
+
+        <div class="">
+          <button
+            class="w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+      </form>
     </div>
   </body>
 </html>

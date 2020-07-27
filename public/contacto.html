@@ -55,85 +55,156 @@
       </div>
     </header>
 
-    <div>
-      <form
-        id="contact-me"
-        class="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700"
-        name="contact"
-        method="POST"
-        data-netlify="true"
+    <main class="sm:flex sm:justify-center">
+      <div class="max-wx-xl mt-6">
+        <form
+          id="contact-me"
+          class="w-full mx-auto max-w-2xl bg-white shadow p-8 text-gray-700"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <h2 class="w-full text-3xl font-bold leading-tight my-5">
+            Envianos un mensaje
+          </h2>
+
+          <div class="flex flex-wrap mb-6">
+            <div class="relative w-full appearance-none label-floating">
+              <input
+                class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+                id="name"
+                type="text"
+                name="Nombre"
+                placeholder="Tu nombre"
+                required
+              />
+              <label
+                for="name"
+                class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+                >Nombre</label
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-wrap mb-6">
+            <div class="relative w-full appearance-none label-floating">
+              <input
+                class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+                id="email"
+                type="text"
+                name="Correo electronico"
+                placeholder="Tu correo electronico"
+                required
+              />
+              <label
+                for="email"
+                class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+                >Correo electronico</label
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-wrap mb-6">
+            <div class="relative w-full appearance-none label-floating">
+              <textarea
+                class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+                id="message"
+                type="text"
+                placeholder="Ingresa tu mensaje"
+                name="Mensaje"
+              ></textarea>
+              <label
+                for="message"
+                class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+                >Mensaje</label
+              >
+            </div>
+          </div>
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <div class="">
+            <button
+              class="w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div
+        class="text-gray-900 max-w-sm py-2 px-4 flex flex-col justify-center ml-5"
       >
-        <h2 class="w-full text-3xl font-bold leading-tight my-5">
-          Formulario de Contacto
-        </h2>
-        <!-- name field -->
-        <div class="flex flex-wrap mb-6">
-          <div class="relative w-full appearance-none label-floating">
-            <input
-              class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-              id="name"
-              type="text"
-              name="Nombre"
-              placeholder="Tu nombre"
-              required
-            />
-            <label
-              for="name"
-              class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
-              >Nombre</label
-            >
-          </div>
-        </div>
-        <!-- email field -->
-        <div class="flex flex-wrap mb-6">
-          <div class="relative w-full appearance-none label-floating">
-            <input
-              class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-              id="email"
-              type="text"
-              name="Correo electronico"
-              placeholder="Tu correo electronico"
-              required
-            />
-            <label
-              for="email"
-              class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
-              >Correo electronico</label
-            >
-          </div>
-        </div>
-        <!-- Message field -->
-        <div class="flex flex-wrap mb-6">
-          <div class="relative w-full appearance-none label-floating">
-            <textarea
-              class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-              id="message"
-              type="text"
-              placeholder="Ingresa tu mensaje"
-              name="Mensaje"
-            ></textarea>
-            <label
-              for="message"
-              class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
-              >Mensaje</label
-            >
-          </div>
-        </div>
-        <div class="field">
-          <div data-netlify-recaptcha="true"></div>
-        </div>
-        <div class="">
-          <button
-            class="w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-            type="submit"
+        <h1 class="text-4xl font-semibold">Ponte en contacto</h1>
+        <p class="mb-2">
+          Revisa otros medios digitales en los cuales puedes ver nuestro trabajo
+          y ponerte en contacto
+        </p>
+        <div class="mt-2">
+          <a
+            href="https://www.facebook.com/conceptomueblechile/"
+            class="flex items-center"
           >
-            Send
-          </button>
+            <svg
+              class="w-8 fill-current text-gray-900"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.926 1.004L14.203 1c-3.06 0-5.037 2.028-5.037 5.168v2.383H6.428A.428.428 0 006 8.979v3.453c0 .236.192.428.428.428h2.738v8.712c0 .236.192.428.428.428h3.573a.428.428 0 00.428-.428V12.86h3.202a.428.428 0 00.428-.428l.001-3.453a.429.429 0 00-.428-.428h-3.203v-2.02c0-.97.231-1.464 1.496-1.464h1.835a.428.428 0 00.428-.429V1.433a.428.428 0 00-.428-.429z"
+              />
+            </svg>
+            <p class="ml-2">
+              Conceptomueble
+            </p>
+          </a>
+
+          <a
+            href="https://www.instagram.com/conceptomueble"
+            class="flex items-center mt-2"
+          >
+            <svg
+              class="w-8 fill-current text-gray-900"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.005 6.351a5.644 5.644 0 100 11.29 5.644 5.644 0 005.644-5.645 5.644 5.644 0 00-5.644-5.645zm0 9.309a3.663 3.663 0 113.664-3.664 3.662 3.662 0 01-3.664 3.664z"
+              />
+              <path
+                d="M16.536 1.07c-2.024-.095-7.037-.09-9.063 0-1.78.083-3.35.512-4.617 1.778-2.115 2.116-1.845 4.967-1.845 9.148 0 4.279-.238 7.064 1.845 9.147 2.124 2.123 5.016 1.845 9.148 1.845 4.239 0 5.702.003 7.2-.577 2.038-.791 3.576-2.613 3.726-5.884.096-2.025.09-7.037 0-9.063-.181-3.862-2.253-6.204-6.394-6.395zm3.204 18.673c-1.387 1.387-3.311 1.264-7.763 1.264-4.583 0-6.421.067-7.762-1.277C2.67 18.192 2.95 15.724 2.95 11.98c0-5.064-.52-8.712 4.563-8.972 1.168-.041 1.512-.055 4.451-.055l.042.027c4.885 0 8.717-.511 8.947 4.57.053 1.16.064 1.509.064 4.444 0 4.53.086 6.379-1.277 7.748z"
+              />
+              <path
+                d="M17.873 7.447a1.32 1.32 0 100-2.638 1.32 1.32 0 000 2.638z"
+              />
+            </svg>
+            <p class="ml-2">@conceptomueble</p>
+          </a>
+
+          <a href="https://wa.me/56974005058" class="flex items-center mt-2">
+            <svg
+              class="w-8 fill-current text-gray-900"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="wspIcon"
+            >
+              <title id="wspIcon">Enviar mensaje a WhatsApp</title>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 23l1.554-5.65a10.842 10.842 0 01-1.462-5.45C1.094 5.89 6.008 1 12.046 1c1.44 0 2.864.283 4.193.831a10.959 10.959 0 013.555 2.365 10.899 10.899 0 012.374 3.54c.55 1.323.833 2.741.832 4.173-.002 6.011-4.917 10.902-10.954 10.902h-.004c-1.83 0-3.629-.456-5.235-1.327L1 23zm6.076-3.49l.332.197a9.124 9.124 0 004.634 1.263h.004c5.018 0 9.102-4.065 9.104-9.061.001-1.19-.234-2.369-.69-3.469a9.06 9.06 0 00-1.973-2.94 9.144 9.144 0 00-6.437-2.658c-5.022 0-9.107 4.064-9.109 9.06a9.007 9.007 0 001.392 4.822l.217.343-.92 3.343 3.446-.9zm10.489-5.008c-.069-.114-.251-.182-.525-.318s-1.62-.795-1.87-.886c-.251-.091-.434-.137-.616.136-.183.273-.707.886-.867 1.068-.16.182-.319.204-.593.068-.273-.136-1.155-.424-2.2-1.352-.814-.723-1.364-1.614-1.523-1.887-.16-.273-.017-.42.12-.556.123-.122.274-.318.41-.477.137-.16.183-.273.274-.455.091-.181.046-.34-.023-.477-.068-.136-.616-1.477-.844-2.023-.222-.53-.448-.459-.616-.467-.159-.008-.342-.01-.524-.01a1.01 1.01 0 00-.73.341c-.25.273-.958.932-.958 2.273 0 1.34.98 2.636 1.118 2.817.137.182 1.93 2.934 4.676 4.114.51.218 1.03.41 1.56.573.655.208 1.252.179 1.724.108.526-.078 1.62-.659 1.847-1.295.228-.636.228-1.181.16-1.295z"
+              />
+            </svg>
+            <p class="ml-2">
+              +56 9 7400 5058
+            </p>
+          </a>
         </div>
-      </form>
-    </div>
+      </div>
+    </main>
     <script>
-      //RED BORDER ON INVALID INPUT
       document.getElementById("contact-me").addEventListener(
         "invalid",
         function (event) {
@@ -142,7 +213,6 @@
         true
       );
 
-      // TEXT AREA AUTO EXPAND
       var textarea = document.querySelector("textarea.autoexpand");
 
       textarea.addEventListener("keydown", autosize);

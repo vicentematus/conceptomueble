@@ -4,4 +4,9 @@
 .gallery-photo {
   @apply w-galleryWidth h-galleryHeight object-cover;
 }
+
+.metodologia-titulo {
+  @apply font-semibold text-center text-lg;
+}
+
 @tailwind utilities;

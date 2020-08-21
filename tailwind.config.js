@@ -9,9 +9,10 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       spacing: {
-        galleryHeight: "19rem",
+        galleryHeight: "30rem",
         galleryWidth: "31rem",
       },
+      maxWidth: {},
     },
     colors,
   },
